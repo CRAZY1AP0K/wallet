@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    background-color: 	#F0FFF0;
+    color: #B0E0E6;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 10px;
+    overflow: hidden;
+    
+}
+
+.header {
+    padding: 30px 0px;
+}
+
+
+.main {
+    display: flex;
+    column-gap: 10px;
+}
+
+.main__column {
+    background-color: 	#FAEBD7;
+    border-radius: 10px;
+    padding: 10px;
+    color: #afb68e;
+}
+
+.canvas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+}
+
+.legend__item {
+    display: flex;
+    column-gap: 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(253, 11, 11);
+    border-radius: 5px;
+}
+
+
+.purcashes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.purcashes__header {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.purcashes__row {
+    text-align: center;
+    background-color: 	#ffffff;
+}
+
+.purcashes__row td {
+    padding: 10px;
+}
+
+.purcashes__item .purcashes__price::after,
+.legend__price::after {
+    content: " \20BD";
+}
+
+.purcashes__item[data-category="product"] {
+    border-left: 5px solid green;
+}
+
+.purcashes__item[data-category="fastfood"] {
+    border-left: 5px solid rgb(255, 174, 0);
+}
+
+.purcashes__item[data-category="sport"] {
+    border-left: 5px solid aqua;
+}
+
+.purcashes__item[data-category="drinks"] {
+    border-left: 5px solid violet;
+}
+
+.purcashes__item .purcashes__item-del {
+    font-size: 30px;
+    text-align: right;
+    padding: 0px 20px;
+}
+
+.purcashes__close path {
+    fill: white;
+}
+
+.editor {
+    width: 20%;
+}
+
+.editor__form {
+    padding: 10px;
+}
+
+.editor__form-row {
+    margin-bottom: 20px;
+}
+
+.editor__form-input-name {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.editor__form-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 2px;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+    width: 100%;
+    color: 	#afb68e;
+}
+
+.editor__form-row input {
+    color: rgb(255, 0, 0);
+}
+
+.editor__form-input::placeholder {
+    color: rgba(255, 255, 255, 0.432);
+}
+
+#select-category {
+    background-color: rgb(43, 156, 255);
+}
+
+.btn {
+    background: #EEE8AA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #E9967A;
+    cursor: pointer;
+}
